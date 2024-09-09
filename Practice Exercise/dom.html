@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   
+</head>
+<body >
+   <ul class="language">
+    <li></li>
+   </ul>
+<ul class="day">
+    <li></li>
+</ul>
+
+</body>
+
+<script>
+//  function addLanguage(langName){
+//        const li = document.createElement('li');
+//        li.innerHTML = `${langName}`;
+//        document.querySelector('.language').appendChild(li);
+//  }
+
+//  addLanguage("Javascript");
+//  addLanguage("python");
+//  addLanguage("Java");
+
+//  function addOptiday(dayName){
+//       const li = document.createElement('li');
+//        li.append!Child(document.createTextNode(dayName))
+//        document.querySelector('.day').appendChild(li);
+//  }
+
+// addOptiday("monday");
+// addOptiday("Tuesday");
+
+const div = document.createElement('div');
+console.log(div);
+div.setAttribute("title","code with sidharth");
+div.setAttribute("class","divClass");
+const text = document.createTextNode("Hey everyone i am preparing for javascript interview");
+div.appendChild(text);
+div.style.color = "pink";
+div.style.fontSize = '45px';
+
+document.querySelector('body').appendChild(div);
+
+</script>
+</html>

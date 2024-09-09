@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="get-result">
+        Hey, how are you?? Hope you are doing well in your life.Here you got your result.
+    </p>
+    <script>
+    //     let number1;
+    //     let number2;
+
+    //   let result = (number1, number2) => {
+    //     return number1 + number2;
+    //   }
+ 
+    //   let sum =result(1,4);
+
+    //   console.log(sum);
+
+
+//     let arr = [1,4,35,53,43];
+
+//    let Output = arr.reduce(function(acc, curr){
+//         if(curr>acc){
+//             acc = curr;
+//         }
+//         return acc; 
+//    }, 0);
+
+//    console.log(Output);
+
+let arr = [1000, 3000, 2000, 5000];
+
+const output = arr.map(function(items, idx) {
+     return items * 0.5;
+});
+
+document.querySelector('#get-result').innerHTML = output;
+
+    
+    </script>
+    <script src="callback.js"></script>
+</body>
+</html>

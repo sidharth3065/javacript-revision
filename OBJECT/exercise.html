@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <script src="exercise.js">
+        let product ={
+            size: 'S',
+            name:'Jeans',
+            fit: 'Slim Fit',
+            'delivery-time':'Same day delivery',
+        };
+
+        let copyProduct = product;
+        console.log(product);
+        copyProduct.size = 'M';
+        console.log(product);
+        copyProduct.fit = 'Regular Fit';
+        console.log(product);
+
+        // Bracket notation 
+        console.log(product['delivery-time']);
+
+        //destructuring object
+         
+        let obj = {
+            message: 'Good job',
+            status: 'Complete',
+        }
+        console.log(obj);
+
+        let {message, status} = obj;
+
+        console.log(message);
+        console.log(status);
+        
+
+    </script>
+</body>
+</html>

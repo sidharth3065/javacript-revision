@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+    <h1>sidharth aur code</h1>
+    <button id="stop">Stop</button>
+</head>
+<body>
+    <script>
+        // setTimeout(function(){
+        //     console.log('sidharth singh');
+        // },2000);
+   
+        // const changeText = () =>{
+        //     document.querySelector('h1').innerHTML = 'work hard beats talent';
+        // }
+        
+        //  setTimeout(changeText,3000);
+        const sayDate = function(str){
+            console.log(str,Date.now());
+        }
+        const interval = setInterval(sayDate ,1000, 'sidharth');
+
+        clearInterval(interval);
+    </script>
+</body>
+</html>
